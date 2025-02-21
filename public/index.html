@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Traffic Optimization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI-Powered Traffic Signal Management</h1>
+   
+
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+
+
+    <video id="camera-feed" width="300" height="200" autoplay playsinline></video>
+
+
+    <button id="start">Start Detection</button>
+    <canvas id="capture-canvas" style="display: none;"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <script src="script.js"></script>
+</body>
+</html>

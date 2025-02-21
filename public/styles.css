@@ -1,0 +1,89 @@
+body {
+    background-image: url('../resources/background0.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    font-size: 60px; /* Adjust the size as needed */
+    color: white; /* Keep it white */
+    text-align: center;
+    background-color: rgb(146, 172, 164); /* Center the text (optional) */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+}
+
+
+.traffic-light {
+    width: 100px;
+    height: 2000px;
+    background: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px 10px rgba(207, 5, 5, 0.5);
+    margin-left: 5in;
+
+}
+
+/* ✅ Traffic Light Circles */
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    background: gray;
+
+}
+
+/* ✅ Default: All Off */
+.traffic-light .red,
+.traffic-light .yellow,
+.traffic-light .green {
+    background: gray;
+}
+
+/* ✅ Light Activation */
+.traffic-light.red .red { background: red; }
+.traffic-light.yellow .yellow { background: yellow; }
+.traffic-light.green .green { background: green; }
+
+/* ✅ Camera Styling */
+#camera-feed {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 40px;
+    
+    margin: 20px auto;
+    box-shadow: 0 0 20px 10px rgba(207, 5, 5, 0.5);
+
+}
+#start{
+    border-radius: 40px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(146, 172, 164);
+    padding: 10px;
+    margin: 20px auto;
+    display: block; 
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    color: white;
+    
+
+}
